@@ -41,8 +41,7 @@ app.get("/messages", (req, res) => {
     res.sendStatus(200);
   });
 });*/
-
-app.use(express.static(__dirname));
+ 
 mongoose.connect(
   dbURL,
   { useNewUrlParser: true, useUnifiedTopology: true },
