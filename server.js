@@ -1,12 +1,13 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-
 const mongoose = require("mongoose");
+var cors = require('cors');
 const validate = require("./middlewares/requestValidator").validate;
 const PORT = process.env.PORT || 3000;
 const path =require("path");
 
 const app = express();
+app.use(cors());
 const http = require("http").Server(app); 
 try {
   app.use(bodyParser.json());
