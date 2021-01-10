@@ -7,6 +7,10 @@ var StudentScema = mongoose.Schema({
   dateOfBirth: Date,
   roll: String,
   class: String,
+  fees:Number,
+  batch:String,
+  phone:Number,
+  email:String
 });
 
 module.exports = mongoose.model("Student", StudentScema);

@@ -16,17 +16,27 @@ router.get("/", (req, res) => {
 });
 router.post("/", (req, res) => {
   console.log(`body   ${JSON.stringify(req.body)}`);
-  var student = new Student(req.body);
-  student
+  var students=req.body;
+  for(let i =0;i<students.length;i++)
+  {
+    var student = new Student(students[i]);
+    student
     .save()
     .then(() => {
       console.log("called post"); 
-      res.send(req.body);
-      return;
+      if(i==(students.length -1))
+      {
+       res.send(req.body);
+       return;
+      }
     })
     .catch((err) => {
       res.send(err.message);
+      return;
     });
+  
+  } 
+  
 });
 
 module.exports = router;
