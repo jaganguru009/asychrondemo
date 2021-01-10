@@ -50,4 +50,4 @@ mongoose.connect(
     if (err) console.log(`Error while connecting DB ${err}`);
   }
 );
-http.listen(3000); 
+http.listen(PORT); 
