@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const validate = require("./middlewares/requestValidator").validate;
 const PORT = process.env.PORT || 3000;
+const path =require("path");
 
 const app = express();
 const http = require("http").Server(app); 
@@ -15,7 +16,12 @@ try {
 } catch (e) {
   console.log("Eror occucered " + e.message);
 }
+app.use(express.static(path.join(__dirname, 'build')));
 
+
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 var dbURL =
   "mongodb+srv://jj:Reset123@asychrondemo.18uxg.mongodb.net/AsychronDemo?retryWrites=true&w=majority";
 
