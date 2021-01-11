@@ -34,16 +34,11 @@ router.get("/", (req, res) => {
       // }
     });
   } else {
-    Student.find({}, (err, msgs) => {
+    Student.find({},{ '_id': 0,'__v':0}, (err, msgs) => {
       if (err) {
         res.sendStatus(500);
       }
-      for(let i=0; i<msgs.length;i++)
-      {
-        delete msgs[i]._id;
-        delete msgs[i].__v;
-      }
-      res.send(msgs);
+      res.send(msgs); 
 
     });
 
