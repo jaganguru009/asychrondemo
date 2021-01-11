@@ -1,23 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.99f7d619.chunk.css",
-    "main.js": "/static/js/main.06f309cc.chunk.js",
-    "main.js.map": "/static/js/main.06f309cc.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.34b09b78.js",
-    "runtime-main.js.map": "/static/js/runtime-main.34b09b78.js.map",
-    "static/js/2.d4bafbf2.chunk.js": "/static/js/2.d4bafbf2.chunk.js",
-    "static/js/2.d4bafbf2.chunk.js.map": "/static/js/2.d4bafbf2.chunk.js.map",
-    "static/js/3.a8965bfa.chunk.js": "/static/js/3.a8965bfa.chunk.js",
-    "static/js/3.a8965bfa.chunk.js.map": "/static/js/3.a8965bfa.chunk.js.map",
+    "main.css": "/static/css/main.56b68c3b.chunk.css",
+    "main.js": "/static/js/main.f6115afb.chunk.js",
+    "main.js.map": "/static/js/main.f6115afb.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6ba65ae8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6ba65ae8.js.map",
+    "static/css/2.07c440cd.chunk.css": "/static/css/2.07c440cd.chunk.css",
+    "static/js/2.f2d777d1.chunk.js": "/static/js/2.f2d777d1.chunk.js",
+    "static/js/2.f2d777d1.chunk.js.map": "/static/js/2.f2d777d1.chunk.js.map",
+    "static/js/3.0abaec34.chunk.js": "/static/js/3.0abaec34.chunk.js",
+    "static/js/3.0abaec34.chunk.js.map": "/static/js/3.0abaec34.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.99f7d619.chunk.css.map": "/static/css/main.99f7d619.chunk.css.map",
-    "static/js/2.d4bafbf2.chunk.js.LICENSE.txt": "/static/js/2.d4bafbf2.chunk.js.LICENSE.txt",
-    "static/js/main.06f309cc.chunk.js.LICENSE.txt": "/static/js/main.06f309cc.chunk.js.LICENSE.txt"
+    "static/css/2.07c440cd.chunk.css.map": "/static/css/2.07c440cd.chunk.css.map",
+    "static/css/main.56b68c3b.chunk.css.map": "/static/css/main.56b68c3b.chunk.css.map",
+    "static/js/2.f2d777d1.chunk.js.LICENSE.txt": "/static/js/2.f2d777d1.chunk.js.LICENSE.txt",
+    "static/js/main.f6115afb.chunk.js.LICENSE.txt": "/static/js/main.f6115afb.chunk.js.LICENSE.txt",
+    "static/media/classmates.f3afc1e2.png": "/static/media/classmates.f3afc1e2.png",
+    "static/media/classroom.8fbe845f.png": "/static/media/classroom.8fbe845f.png",
+    "static/media/parents.ded27bcf.png": "/static/media/parents.ded27bcf.png",
+    "static/media/salary.b967229c.png": "/static/media/salary.b967229c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.34b09b78.js",
-    "static/js/2.d4bafbf2.chunk.js",
-    "static/css/main.99f7d619.chunk.css",
-    "static/js/main.06f309cc.chunk.js"
+    "static/js/runtime-main.6ba65ae8.js",
+    "static/css/2.07c440cd.chunk.css",
+    "static/js/2.f2d777d1.chunk.js",
+    "static/css/main.56b68c3b.chunk.css",
+    "static/js/main.f6115afb.chunk.js"
   ]
 }
