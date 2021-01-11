@@ -38,7 +38,13 @@ router.get("/", (req, res) => {
       if (err) {
         res.sendStatus(500);
       }
+      for(let i=0; i<msgs.length;i++)
+      {
+        delete msgs[i]._id;
+        delete msgs[i].__v;
+      }
       res.send(msgs);
+
     });
 
   }
