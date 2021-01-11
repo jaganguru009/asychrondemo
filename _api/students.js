@@ -20,6 +20,12 @@ router.get("/", (req, res) => {
       }
       else {
         res.send(results);
+        for(let i=0; i<results.length;i++)
+        {
+          delete results[i]._id;
+          delete results[i].__v;
+        }
+
       }
       // if (results.length == 0) {
       //     return false;
