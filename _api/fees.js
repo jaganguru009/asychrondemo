@@ -1,15 +1,12 @@
 const express = require("express");
-const Student = require("../models/studentsModel");
+const fee = require("../models/feesModel");
 const router = express.Router();
-const http = require("http");
-const events = require("events"); 
+const http = require("http"); 
 
 
-router.get("/", (req, res) => {
-  let parentName = req.query.parentName;
-  console.log("req.query.parentName " +req.query.parentName)
+router.get("/", (req, res) => { 
   if (req.query.parentName != undefined) {
-    Student.find({
+    fee.find({
       $and: [
         { $and: [{ middleName: parentName }] }
       ]
@@ -28,7 +25,7 @@ router.get("/", (req, res) => {
       // }
     });
   } else {
-    Student.find({}, (err, msgs) => {
+    fee.find({}, (err, msgs) => {
       if (err) {
         res.sendStatus(500);
       }
@@ -40,14 +37,14 @@ router.get("/", (req, res) => {
 
 router.post("/", (req, res) => {
   console.log(`body   ${JSON.stringify(req.body)}`);
-  var students = req.body;
-  for (let i = 0; i < students.length; i++) {
-    var student = new Student(students[i]);
-    student
+  var fees = req.body;
+  for (let i = 0; i < fees.length; i++) {
+    var fee = new fee(fees[i]);
+    fee
       .save()
       .then(() => {
         console.log("called post");
-        if (i == (students.length - 1)) {
+        if (i == (fees.length - 1)) {
           res.send(req.body);
           return;
         }
